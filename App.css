@@ -1,0 +1,242 @@
+/* Home container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card for student info */
+.card {
+  background: #1a1a1a;
+  border: 1px solid #8a2be2;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+  text-align: center;
+}
+
+/* Welcome heading */
+.welcome-text {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #9d4edd;
+}
+
+/* Student info */
+.info {
+  text-align: left;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.info p {
+  margin: 0.5rem 0;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logout-btn,
+.update-btn {
+  background: #8a2be2;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  flex: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover,
+.update-btn:hover {
+  background: #9d4edd;
+}
+
+
+/* Global page container */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212; /* Dark theme background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/* Form box */
+.form-box {
+  background: #1e1e1e;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  border: 2px solid #8a2be2; /* Violet/Purple border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.form-box h2 {
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+/* Input & Select fields */
+.form-box input,
+.form-box select {
+  display: block;
+  width: 100%;              /* full width inside form */
+  box-sizing: border-box;   /* includes padding in width */
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #8a2be2;
+  border-radius: 8px;
+  background: #121212;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+  border-color: #9d4edd;
+  box-shadow: 0 0 6px #9d4edd;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #8a2be2; /* Purple accent */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #9d4edd;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Global dark theme */
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form box */
+.form-box {
+  background: #1a1a1a;
+  border: 1px solid #8a2be2;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+  text-align: center;
+}
+
+/* Input fields */
+.form-box input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border: 1px solid #8a2be2;
+  border-radius: 8px;
+  background: #121212;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box input:focus {
+  border-color: #9d4edd;
+  box-shadow: 0 0 6px #9d4edd;
+}
+
+/* Buttons */
+.form-box button {
+  background: #8a2be2;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.form-box button:hover {
+  background: #9d4edd;
+}
+
+/* Link text */
+.form-box p {
+  margin-top: 1rem;
+}
+
+.form-box a {
+  color: #9d4edd;
+  text-decoration: none;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
+
+.delete-btn {
+  background: #b00020;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  flex: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
